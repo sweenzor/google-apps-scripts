@@ -1,7 +1,5 @@
 # google-apps-scripts
 
-## to run
-https://script.google.com/macros/
-
-## documentation
+## documentation/creation
 https://developers.google.com/apps-script/
+https://script.google.com/macros/
