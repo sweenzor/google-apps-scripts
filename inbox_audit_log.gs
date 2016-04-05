@@ -5,9 +5,10 @@
  * Requires a label called "☃"
  */
 function auditLogInbox() {
+  var batch = 100
   var threads = GmailApp.getInboxThreads();
-  for (var i = 0; i < threads.length; i++) {
+  for (var i = 0; i < threads.length; i+=batch) {
     var label = GmailApp.getUserLabelByName("☃");
-    label.addToThread(threads[i]);
+    label.addToThreads(threads.slice(i, i+batch));
   }
 };
